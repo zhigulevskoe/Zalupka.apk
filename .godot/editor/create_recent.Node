@@ -1,0 +1,13 @@
+TextureButton
+AnimatedSprite2D
+Sprite2D
+Button
+CollisionShape2D
+Area2D
+CheckButton
+Camera2D
+CollisionPolygon2D
+AnimationPlayer
+CharacterBody2D
+StaticBody2D
+Node2D

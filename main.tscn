@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://yyb5ples5vd0"]
+
+[ext_resource type="Texture2D" uid="uid://c1ajey645jp01" path="res://assets/buttons/button_start.png" id="1_eo853"]
+[ext_resource type="Script" path="res://scripts/StratButton.gd" id="1_fqbw5"]
+[ext_resource type="Texture2D" uid="uid://f65wxqlto7im" path="res://assets/buttons/button_start_hover.png" id="3_6g1tt"]
+[ext_resource type="Texture2D" uid="uid://dn08qtutfohuu" path="res://assets/buttons/button_exit.png" id="4_0pft5"]
+[ext_resource type="Texture2D" uid="uid://bbur1h4auiapc" path="res://assets/buttons/button_exit_hover.png" id="5_patu4"]
+[ext_resource type="Script" path="res://scripts/ExitButton.gd" id="6_mibyj"]
+
+[node name="Main" type="Node2D"]
+
+[node name="StartButton" type="TextureButton" parent="."]
+offset_left = 769.0
+offset_top = 356.0
+offset_right = 1151.0
+offset_bottom = 495.0
+texture_normal = ExtResource("1_eo853")
+texture_hover = ExtResource("3_6g1tt")
+stretch_mode = 5
+script = ExtResource("1_fqbw5")
+
+[node name="ExitButton" type="TextureButton" parent="."]
+offset_left = 769.0
+offset_top = 555.0
+offset_right = 1151.0
+offset_bottom = 705.0
+texture_normal = ExtResource("4_0pft5")
+texture_hover = ExtResource("5_patu4")
+stretch_mode = 4
+script = ExtResource("6_mibyj")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
+[connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
