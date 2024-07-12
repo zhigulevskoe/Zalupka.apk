@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://pn8ackcvd3pw"]
+[gd_scene load_steps=12 format=3 uid="uid://pn8ackcvd3pw"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_b8sb8"]
 [ext_resource type="Texture2D" uid="uid://2lq4l7wm27sr" path="res://assets/gg/gg_animations.png" id="2_csor4"]
+[ext_resource type="PackedScene" uid="uid://qrxtl317qyah" path="res://pause_menu.tscn" id="3_ek256"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1csh5"]
 size = Vector2(32, 60)
@@ -81,6 +82,14 @@ shape = SubResource("RectangleShape2D_1csh5")
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="PauseMenu" parent="Camera2D" instance=ExtResource("3_ek256")]
+visible = false
+top_level = true
+offset_left = -83.0
+offset_top = -121.0
+offset_right = -83.0
+offset_bottom = -121.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 5.96046e-08)

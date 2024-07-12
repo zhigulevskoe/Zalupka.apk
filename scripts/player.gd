@@ -6,21 +6,23 @@ const JUMP_VELOCITY = -400.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+
+
+# пауза
+@onready var pause_menu = $Camera2D/PauseMenu
+var paused = false
+func pauseMenu():
+	if paused:
+		pause_menu.hide()
+		Engine.time_scale = 1
+	else:
+		pause_menu.show()
+		Engine.time_scale = 0
+	paused = !paused
+	
 # система прыжков с возможностью нескольких подряд
 var jumps = 0
 var air_jumps_allowed = 1
-
-# пауза
-#@onready var pause_menu = $Camera2D/PauseMenu
-var paused = false
-#func pauseMenu():
-	#if paused:
-		#pause_menu.hide()
-		#Engine.time_scale = 1
-	#else:
-		#pause_menu.show()
-		#Engine.time_scale = 0
-	#paused = !paused
 
 func jump():
 	if Input.is_action_just_pressed("jump_space") and jumps <= air_jumps_allowed:
@@ -42,8 +44,8 @@ func _process(_delta):
 	if is_on_floor() and velocity.x == 0:
 		$AnimatedSprite2D.play('calm')
 	
-	#if Input.is_action_just_pressed("escape"):
-		#pauseMenu()
+	if Input.is_action_just_pressed("escape"):
+		pauseMenu()
 
 
 func _physics_process(delta):

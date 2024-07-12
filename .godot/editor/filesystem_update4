@@ -1,4 +1,6 @@
-res://main.tscn
 res://player.tscn
+res://scripts/escape_menu.gd
+res://main.tscn
 res://lvl_1.tscn
 res://pause_menu.tscn
+res://scripts/player.gd
