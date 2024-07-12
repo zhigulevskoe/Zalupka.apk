@@ -1,4 +1,4 @@
-res://player.tscn
 res://main.tscn
-res://scripts/ExitButton.gd
-res://scripts/StratButton.gd
+res://player.tscn
+res://lvl_1.tscn
+res://pause_menu.tscn

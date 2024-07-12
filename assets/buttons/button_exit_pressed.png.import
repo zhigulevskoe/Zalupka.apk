@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2lq4l7wm27sr"
-path="res://.godot/imported/gg_animations_new_color.png-1406dd217a3c5b0be5e0279bb46ebcac.ctex"
+uid="uid://bbur1h4auiapc"
+path="res://.godot/imported/button_exit_pressed.png-24b638f18c8bea5e6f482f3a8756b6e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gg/gg_animations_new_color.png"
-dest_files=["res://.godot/imported/gg_animations_new_color.png-1406dd217a3c5b0be5e0279bb46ebcac.ctex"]
+source_file="res://assets/buttons/button_exit_pressed.png"
+dest_files=["res://.godot/imported/button_exit_pressed.png-24b638f18c8bea5e6f482f3a8756b6e6.ctex"]
 
 [params]
 

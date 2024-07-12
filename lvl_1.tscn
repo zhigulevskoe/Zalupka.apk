@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://pn8ackcvd3pw" path="res://player.tscn" id="3_d6lwm"]
 
 [node name="lvl_1" type="StaticBody2D"]
+process_mode = 1
 
 [node name="Icon" type="Sprite2D" parent="."]
 modulate = Color(0.869093, 0.207394, 0.687001, 1)
